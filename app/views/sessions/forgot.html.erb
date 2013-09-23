@@ -1,0 +1,16 @@
+<% provide(:title, "Reset password") %>
+<h1>Reset password</h1>
+
+<p>Please enter the email you used to register</p>
+
+<div class="row">
+	<div class= "span6 offset3">
+		<%= form_for(:session, url: forgot_path) do |f| %>
+
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+
+			<%= f.submit "Submit", class:"btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+</div>

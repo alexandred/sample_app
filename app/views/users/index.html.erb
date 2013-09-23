@@ -1,6 +1,10 @@
 <% provide(:title, "All users") %>
 <h1>All users</h1>
 
+<div id="search">
+	<%= render('users/search') %>
+</div>
+
 <%= will_paginate %>
 
 <ul class="users">

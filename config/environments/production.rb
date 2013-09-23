@@ -79,4 +79,6 @@ SampleApp::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.force_ssl = true
+
+  config.action_mailer.default_url_options = { :host => "enigmatic-gorge-1457.herokuapp.com" }
 end
